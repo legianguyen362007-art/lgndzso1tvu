@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin đăng ký</title>
+
+    <style>
+        body{
+            background:#e5e5e5;
+            font-family: Arial;
+        }
+
+        .box{
+            width:650px;
+            margin:30px auto;
+            background:white;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 0 10px gray;
+        }
+
+        .title{
+            background:#8db243;
+            text-align:center;
+            padding:20px;
+            font-size:30px;
+            font-weight:bold;
+        }
+
+        .content{
+            padding:25px;
+        }
+
+        table{
+            width:100%;
+        }
+
+        td{
+            padding:8px;
+        }
+
+        input, select, textarea{
+            width:100%;
+            padding:7px;
+        }
+
+        textarea{
+            height:100px;
+        }
+
+        .radio, .check{
+            width:auto;
+        }
+
+        .btn{
+            padding:10px 20px;
+            border:none;
+            background:#8db243;
+            cursor:pointer;
+            font-weight:bold;
+            margin-top:10px;
+        }
+
+        .center{
+            text-align:center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <div class="title">
+        Thông tin đăng ký
+    </div>
+
+    <div class="content">
+
+        <table>
+
+            <tr>
+                <td>Họ tên:</td>
+                <td><input type="text" placeholder="Nhập họ tên"></td>
+            </tr>
+
+            <tr>
+                <td>Ngày sinh:</td>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr>
+                <td>Giới tính:</td>
+                <td>
+                    <input class="radio" type="radio" name="gt"> Nam
+                    <input class="radio" type="radio" name="gt"> Nữ
+                </td>
+            </tr>
+
+            <tr>
+                <td>Địa chỉ:</td>
+                <td><input type="text" placeholder="Nhập địa chỉ"></td>
+            </tr>
+
+            <tr>
+                <td>MSSV:</td>
+                <td><input type="text" placeholder="Nhập mã số sinh viên"></td>
+            </tr>
+
+            <tr>
+                <td>Lớp:</td>
+                <td>
+                    <select>
+                        <option>DA25TTTC</option>
+                        <option>DA25CNTT</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Số điện thoại:</td>
+                <td><input type="text" placeholder="Nhập số điện thoại"></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" placeholder="Nhập email"></td>
+            </tr>
+
+            <tr>
+                <td>Ảnh đại diện:</td>
+                <td><input type="file"></td>
+            </tr>
+
+            <tr>
+                <td>Sở trường:</td>
+                <td>
+                    <input class="check" type="checkbox"> Thiết kế web
+                    <input class="check" type="checkbox"> Lập trình web
+                    <input class="check" type="checkbox"> Thành thạo tiếng Trung
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mô tả sơ lược:</td>
+                <td>
+                    <textarea></textarea>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="center">
+            <button class="btn">Hủy bỏ</button>
+            <button class="btn">Đăng ký</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
